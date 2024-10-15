@@ -1,6 +1,27 @@
 # Play with Module
 
 - https://www.cnblogs.com/yeungchie/p/16268954.html
+
+# Commands
+```Shell
+module avail # Check all available modules
+module avail mpi # Check available implementations for specific module
+----------------------------------- /opt/intel/oneapi/modulefiles -----------------------------------
+mpi/2021.13  mpi/latest  
+
+Key:
+modulepath  
+
+module load mpi # load a module
+
+module list # print all loaded module
+
+module switch ic ic/617 # switch to a implementation of a module
+
+module rm ic # remove a module
+
+module purge # clean all loaded modules
+```
 # Modulefiles
 - in `tcl` file
 
