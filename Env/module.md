@@ -2,7 +2,7 @@
 
 - https://www.cnblogs.com/yeungchie/p/16268954.html
 
-# Commands
+## Commands
 ```Shell
 module avail # Check all available modules
 module avail mpi # Check available implementations for specific module
@@ -22,7 +22,7 @@ module rm ic # remove a module
 
 module purge # clean all loaded modules
 ```
-# Modulefiles
+## Modulefiles
 - in `tcl` file
 
 ```tcl
@@ -53,3 +53,8 @@ source-sh bash /home/yxy/aocl/4.2.0/aocc/amd-libs.cfg(base) [xly@sc1 icon-model]
 
 - When you use `prepend-path`, you add a directory or path to the beginning of an existing environment variable.
 - This is useful when you want to prioritize a specific directory for executable files over others. The newly added directory becomes the first one searched when you run a command.
+
+## Modulepaths
+```Shell
+export MODULEPATH=/usr/local/modules:$MODULEPATH
+```
