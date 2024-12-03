@@ -1,0 +1,3 @@
+[submodule "Editor/VimTutor"]
+	path = Editor/VimTutor
+	url = https://github.com/HanielF/VimTutor.git

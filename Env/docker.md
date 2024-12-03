@@ -5,6 +5,7 @@ dockerd
 systemctl status docker
 ```
 
+
 ## Useful Commands
  - https://docs.docker.com/reference/cli/docker/container/run/
 ```Shell
@@ -29,3 +30,12 @@ docker run --gpus '"device=0,1,2,3"' --runtime=nvidia --rm -it -w /work      
 ## What is Docker container
 - https://www.docker.com/resources/what-container/
 
+## Set Proxy in a Docker container
+- enter a running container
+- nano /etc/environment
+```
+http_proxy="http://your_proxy_address:port/"
+https_proxy="http://your_proxy_address:port/"
+ftp_proxy="http://your_proxy_address:port/"
+no_proxy="localhost,127.0.0.1,.yourdomain.com"
+```

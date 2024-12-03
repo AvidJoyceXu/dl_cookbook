@@ -1,4 +1,6 @@
 # Understand mpi run commands
+## without host file
+`mpirun -np 12 -host node1,node2,node3 ./your_mpi_executable`
 ## Example
 example: `mpirun --verbose -n 4 --map-by socket --display-map -hostfile $(pwd)/sc-hosts-gpu -- $PROF $(pwd)/gpu-wrapper.sh`
 
@@ -32,3 +34,7 @@ node3 slots=2
 # node1, node2, and node3 are the hostnames (or IP addresses) of each node.
 # slots=<num> indicates how many processes can run concurrently on each host (like specifying the number of CPU cores).
 ```
+
+## `mpiexec` and `mpirun`
+- `mpiexec` is specified in MPI 2 standard
+- `mpirun` is an alias to `mpiexec`, supported by OpenMPI but might be absent in MPICH or other less common MPI implementations
