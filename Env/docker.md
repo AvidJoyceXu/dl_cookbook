@@ -1,4 +1,17 @@
 # Play with docker
+
+## Check Docker Root
+```Shell
+> docker info | grep "Docker Root Dir"
+WARNING: bridge-nf-call-iptables is disabled
+WARNING: bridge-nf-call-ip6tables is disable
+Docker Root Dir: /var/lib/docker
+```
+
+## Check the pulled Docker image
+```Shell
+docker images
+```
 ## Debug docker
 ```Shell
 dockerd
